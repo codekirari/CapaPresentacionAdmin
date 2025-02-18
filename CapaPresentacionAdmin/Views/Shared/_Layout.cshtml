@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Site.css")
     @*@Scripts.Render("~/bundles/modernizr")*@
 </head>
-<body>
+<body class="sb-nav-fixed">
+
 
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
@@ -129,19 +130,18 @@
 
 
 
-
-
         @*@RenderBody()*@
-        @*<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+        <!--<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
         <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
         <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-        <li>@Html.ActionLink("Test", "Test", "Home")</li>*
+        <li>@Html.ActionLink("Test", "Test", "Home")</li>*-->
 
 
 
 
         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/complementos")
         @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)*@
+        @RenderSection("scripts", required: false)
 </body>
 </html>
