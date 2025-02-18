@@ -108,6 +108,7 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
+
                     @RenderBody()
 
 
@@ -122,25 +123,25 @@
                             </div>
                         </div>
                     </div>
-                </footer>
-            </div>
+                    </footer>
+                </div>
         </div>
 
 
 
 
 
-        @*@RenderBody()
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Test", "Test", "Home")</li>*@*@
+        @*@RenderBody()*@
+        @*<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+        <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+        <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Test", "Test", "Home")</li>*
 
 
 
 
-                    @Scripts.Render("~/bundles/jquery")
-                    @Scripts.Render("~/bundles/bootstrap")
-                    @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
 </body>
 </html>
